@@ -1,0 +1,8 @@
+<table border="1">
+  <% @users.each do |user|%>
+  <tr>
+    <td><%= user.name %></td>
+    <td><% user.comments.each do |comment| %><%= comment.body %><% end %></td>
+  </tr>
+  <% end %>
+</table>
